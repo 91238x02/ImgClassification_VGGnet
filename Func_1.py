@@ -121,6 +121,16 @@ def csv_maker_5(path, k1=None, k2=None, k3=None, k4=None, k5=None):
     file.close
     
     
+def csv_maker_2(path, k1=None, k2=None):
+    file = open(path, 'w')
+    
+    for i in range(k1):
+        file.write(str(0) + '\n')
+    for i in range(k2):
+        file.write(str(1) + '\n')
+    file.close
+    
+    
 
 def label_load(path, label_cnt=None):
 
