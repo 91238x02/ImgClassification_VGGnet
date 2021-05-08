@@ -1,0 +1,31 @@
+1. Anaconda prompt 실행 (관리자 권한으로)
+
+2. prompt 창에 아래 명령어 입력
+jupyter notebook --generate-config -y
+
+3. 경로 수정
+3.1 숨김 폴더 보기 설정
+폴더 open - 보기 탭 - '숨김 항목' 체크
+3.2 prompt 창에 작성된 경로로 이동
+3.3 jupyter_notebook_config.py 파일 열기(메모장으로)
+3.4 아래 단어를 검색 (ctrl+f)
+# c.NotebookApp.notebook_dir = ''
+3.5 검색된 줄을 아래와 같이 수정
+c.NotebookApp.notebook_dir = 'C:/'
+3.6 저장 후 창 닫기
+
+4. 시작 - jupyter 입력 - 파일 위치 열기
+
+5. 바로가기 우클릭 후 속성
+
+6. 삭제 항목
+시작위치(s) 탭의 %HOMEPATH% 삭제
+대상(T) 의  "%USERPROFILE%/" 삭제
+두 개 삭제 후 확인 클릭
+
+7. jupyter Notebook (sample) 실행
+실행하면 홈 처음 디렉토리가 C:/ 인 것을 확인가능
+
+
+index : url
+https://ooyoung.tistory.com/7
