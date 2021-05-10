@@ -1,4 +1,5 @@
 [Anaconda env] sample 
+# open "Anaconda Prompt (anaconda3)"
 
 # Create new anconda env
 conda create -n sample -y
