@@ -7,11 +7,13 @@ import random
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 
-"""  ###함수설명###
+"""  MANUAL
 resize : raw 파일을 resize 하고 1.jpg, 2.jpg, 3.jpg ... 100.jpg 형태로 저장하는 함수 (raw 파일의 숫자만큼 숫자 부여)
+fix_resize : generating 할 때 이미지 변형 이슈 해결코드 포함 
 image_load : .jpg file 을 python 으로 load 하는 함수, 4차원 ndarray 를 반환한다
 csv_maker_10 : class 가 10개인 label csv file 생성 함수
 csv_maker_5 : class 가 5개인 label csv file 생성 함수
+csv_maker_2 : class 가 2개인 label csv file 생성 함수
 label_load : label csv file 을 python 으로 로드하여 one-hot encoding 하여 label 값을 반환하는 함수 (2차원 ndarray 반환)
 """
 
