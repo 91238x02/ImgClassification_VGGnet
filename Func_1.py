@@ -77,6 +77,32 @@ def image_load(path):
     return np.array(image)
 
 
+
+def img_load_c(path):
+    file_list = os.listdir(path)
+    
+    file_name = []
+    for i in file_list:
+        a = int(re.sub('[^0-9]', '', i)) 
+        
+        file_name.append(a)
+    file_name.sort()  
+    
+    file_res = []
+    for j in file_name:
+        file_res.append('%s/%d.jpg' %(path,j) )
+    
+    image = []
+    for q,k in enumerate(file_res,1):
+        img = cv2.imread(k)
+        print("Current img :", q, end='\n')
+        image.append(img)
+
+    return np.array(image)
+
+
+
+
 def csv_maker_10(path, k1=None, k2=None, k3=None, k4=None, k5=None, k6=None, k7=None, k8=None, k9=None, k10=None):
     file = open(path, 'w')
     
